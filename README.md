@@ -39,16 +39,16 @@ This project securely generates a TOTP-based 2FA code using:
 ```
 .
 ├── app/
-│   ├── main.py
+│   ├── server.py
 │   ├── crypto_utils.py
 │   ├── totp_utils.py
 │   └── generate_proof.py
 │
 ├── cron/
-│   └── 2fa-cron
+│   └── totp_cron
 │
 ├── scripts/
-│   └── log_2fa_cron.py
+│   └── cron_job.py
 │
 ├── student_private.pem
 ├── student_public.pem
@@ -142,10 +142,10 @@ Response:
 ---
 
 ## 7. Cron System
-- File: `cron/2fa-cron`
+- File: `cron/totp_cron`
 - Must use LF line endings
 - Runs every 1 minute
-- Executes `scripts/log_2fa_cron.py`
+- Executes `scripts/cron_job.py`
 - Logs to `/cron/last_code.txt`
 
 Example line:
