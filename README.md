@@ -1,4 +1,4 @@
-# PKI-Based 2FA System (GPP Week-2)
+# Build Secure PKI-Based 2FA Microservice with Docker
 
 This project implements a complete Public-Key-Infrastructure based Two-Factor Authentication (2FA) system required for **Global Placement Program – Week 2**.
 
