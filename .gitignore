@@ -25,3 +25,9 @@ docker_cron/
 # OS junk
 .DS_Store
 Thumbs.db
+# runtime and local test files
+/data/
+/payload*.json
+commit.sig.b64.one
+*.pyc
+__pycache__/
